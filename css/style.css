@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&family=Poppins:wght@700&family=Roboto:wght@400;500;700&display=swap');
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+    --font-title: Poppins;
+    --font-text: Roboto;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: .5;
+}
+
+/* HEADER */
+section.header{
+    background-color: var(--purple-bg);
+    padding: 0px 0px 50px 0px;
+    color: var(--white);
+    border-bottom: 5px solid var(--green);
+}
+
+article.cont {
+    max-width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+header > section.menu-bar {
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-text);
+}
+header > section.menu-bar > a {
+    color: var(--white);
+}
+
+header > section.menu-bar > a:nth-child(1) article::before{
+    content: "";
+    margin-right: 5px;
+    padding: 0 1px;
+    height: 10px;
+    background-color: var(--green);
+}
+
+header > section.search{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+header > section.search > input{
+    outline: none;
+    color: var(--white);
+    padding: 0px 20px;
+    border-radius: 5px 0 0 5px;
+    height: 37px;
+    background-color: var(--dark-bg);
+}
+section.search > input:focus{
+    color: var(--white);
+}
+
+header > section.search > button{
+    height: 37px;
+    padding: 0 25px;
+    border-radius: 0 5px 5px 0px;
+    background-color: var(--button-bg);
+}
+
+.destaque {
+    height: 350px;
+    display: flex;
+    /* gap: 100px; */
+}
+
+.destaque > aside{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* text-align: justify; */
+    /* justify-content: space-between; */
+}
+.destaque  h1{
+    font-family: var(--font-title);
+    color: var(--button-bg);
+    font-size: 30px;
+}
+
+.destaque p{
+    font-size: 18px;
+    font-family: var(--font-text);
+}
+
+.destaque > aside span{
+    font-family: var(--font-text);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--button-bg);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+section.cont{
+    max-width: 80%;
+    padding: 60px 0;
+    margin: auto;
+}
+
+section.cont h1{
+    font-family: var(--font-title);
+    color: var(--purple-bg);
+    font-size: 22px;
+    font-weight: 400;
+}
+section.cont p{
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section.cont span.date {
+    font-family: var(--font-text);
+    color: var(--purple-bg);
+    font-weight: 500;
+}
+section.cont > section.news{
+    display: flex;
+    gap: 70px;
+}
+
+section.cont hr{
+    height: 1px;
+    background-color: lightgrey;
+}
+
+section.cont > section.news > article:nth-child(1){
+    width: 500px;
+}
+
+section.cont > section.news > article:nth-child(1) > aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Roboto;
+}
+
+/* body > main > section.cont > section.news > article:nth-child(1)  */
+
+body > main > section.cont > section.news > article:nth-child(1) > aside > div > img {
+    width: 500px;
+}
+
+section.cont > section.news > article:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section.cont > section.news > article:nth-child(2) > aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.news-3{
+    max-width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px 0px;
+}
+
+section.news-3 > aside {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: blue; */
+}
+
+
+section.news-3 > aside > div img {
+    width: 100%;
+}

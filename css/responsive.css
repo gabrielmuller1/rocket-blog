@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+
+    /* MENU */
+    
+    
+    .destaque {
+        flex-direction: column-reverse;
+    }
+    .destaque > div{
+        width: 100%;
+    }
+    .destaque > div > img{
+        width: 100%;
+    }
+}
